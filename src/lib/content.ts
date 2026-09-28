@@ -20,7 +20,7 @@ export const statement = {
 export const story = {
   eyebrow: "The Story",
   heading: ["Two people,", "one impossible choice"],
-  lede: "In Bellevue Falls, everyone is addicted to something. Two young star-crossed lovers are about to choose the most dangerous one: each other.",
+  lede: "In Bellvue Falls, everyone is addicted to something. Two young star-crossed lovers are about to choose the most dangerous one: each other.",
   paragraphs: [
     "Dallas Dixon, a fallen quarterback turned dealer, is two payments away from walking out of the only life this town ever offered him. Allegra Cunningham, a trust fund baby and heir to the Cunningham steel fortune, was born on the right side of town and is less than a year from a plane to Oxford.",
     "Then she tracks him down at a local diner to return her addict mother's Oxy. One late night conversation later, two people who were never supposed to meet believe they can outrun everything.",
@@ -65,11 +65,11 @@ export const team: TeamMember[] = [
 
 export const stills = [
   { src: "/images/wildcats-bleachers.jpg", alt: "Empty football bleachers marked 'Home of the Wildcats' overlook a fog-covered steel mill town at dusk." },
-  { src: "/images/still-here-street.jpg", alt: "A decayed Bellevue Falls street lined with burned-out buildings." },
+  { src: "/images/still-here-street.jpg", alt: "A decayed Bellvue Falls street lined with burned-out buildings." },
   { src: "/images/dallas-mirror.jpg", alt: "Dallas washes his hands at a cracked bathroom mirror, the mill skyline out the window." },
   { src: "/images/mill-handoff.jpg", alt: "Two silhouetted figures exchange a bag inside the ruins of the old steel mill at sunset." },
   { src: "/images/lit-window.jpg", alt: "A single lit window glows in an otherwise dark row of brick houses at night." },
-  { src: "/images/truck-warner-marquee.jpg", alt: "Dallas and Allegra sit in the bed of a truck overlooking Bellevue Falls, the Warner theater marquee glowing below." },
+  { src: "/images/truck-warner-marquee.jpg", alt: "Dallas and Allegra sit in the bed of a truck overlooking Bellvue Falls, the Warner theater marquee glowing below." },
 ];
 
 export const social = {
