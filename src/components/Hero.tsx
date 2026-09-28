@@ -22,10 +22,6 @@ export default function Hero() {
       ref={ref}
       className="relative flex h-[100svh] min-h-[680px] w-full items-end overflow-hidden bg-ink"
     >
-      {/* The key art already carries the full title treatment — this hero
-          adds only the logline and CTAs beneath it. */}
-      <h1 className="sr-only">{film.title} — {film.tagline}</h1>
-
       <motion.div style={{ scale }} className="absolute inset-0 bg-ink">
         <Image
           src="/images/poster-vertical.webp"
@@ -47,13 +43,17 @@ export default function Hero() {
 
       <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-ink/80 to-transparent md:hidden" />
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 h-[42%] bg-gradient-to-t from-ink from-10% via-ink/85 via-45% to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-[65%] bg-gradient-to-t from-ink from-5% via-ink via-90% to-transparent md:h-[42%] md:via-ink/85 md:via-45%" />
 
       <motion.div
         style={{ opacity, y }}
         className="relative z-10 mx-auto w-full max-w-5xl px-6 pb-16 md:px-10 md:pb-20"
       >
-        <p className="max-w-xl animate-fade-up text-sm leading-relaxed text-cream-dim md:text-base">
+        <h1 className="font-display animate-fade-up text-3xl tracking-wide text-cream sm:text-4xl">
+          Dallas <span className="text-rust-bright">&amp;</span> Allegra
+        </h1>
+
+        <p className="mt-4 max-w-xl animate-fade-up text-sm leading-relaxed text-cream-dim [animation-delay:80ms] md:text-base">
           {film.logline}
         </p>
 

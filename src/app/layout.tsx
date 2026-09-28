@@ -48,6 +48,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
   openGraph: {
     type: "video.movie",
     url: siteUrl,
