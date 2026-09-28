@@ -32,9 +32,14 @@ export default function Support() {
           id="newsletter"
           className="mt-24 scroll-mt-28 border-t border-line pt-16"
         >
-          <h3 className="font-serif text-2xl italic text-cream">
-            Follow the story before it happens.
+          <p className="eyebrow text-ember">Exclusive Access</p>
+          <h3 className="font-serif mt-3 text-2xl italic text-cream sm:text-3xl">
+            Behind the scenes, first.
           </h3>
+          <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-cream-dim">
+            Sneak peeks, on-set footage, casting news, and festival dates &mdash;
+            straight to your inbox, before anyone else sees them.
+          </p>
           <div className="mt-8 flex justify-center">
             <NewsletterForm source="support-section" />
           </div>
