@@ -38,6 +38,20 @@ export default function Story() {
             </p>
           ))}
         </Reveal>
+
+        <Reveal delay={0.25}>
+          <p className="mt-10 max-w-3xl text-sm leading-relaxed text-cream-dim md:text-base">
+            {story.closing.map((part, i) =>
+              typeof part === "string" ? (
+                <span key={i}>{part}</span>
+              ) : (
+                <em key={i} className="font-serif italic text-cream">
+                  {part.italic}
+                </em>
+              )
+            )}
+          </p>
+        </Reveal>
       </div>
     </section>
   );

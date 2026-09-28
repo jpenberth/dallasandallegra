@@ -9,7 +9,7 @@ export default function Stills() {
         <Reveal>
           <p className="eyebrow text-ember">Stills</p>
           <h2 className="font-display mt-3 text-5xl leading-[0.95] text-cream sm:text-6xl">
-            Bellvue Falls
+            Bellevue Falls
           </h2>
         </Reveal>
 
