@@ -43,7 +43,7 @@ export const team: TeamMember[] = [
   {
     name: "J. Penberth Rabold",
     role: "Writer & Director",
-    bio: "Pittsburgh- and LA-based writer/director with 15+ years' experience as a director, first assistant director, and unit production manager across music videos, shorts, and features. Directed the award-winning short Connected; developed the series Ghosts of War, a second-round selection at the Austin Film Festival.",
+    bio: "Writer/director based between Pittsburgh and LA. Fifteen years as a unit production manager and first assistant director taught him what a story costs once it has to stand on a set, long before he had one worth telling himself. He's come close more times than he can count — a series that went down to the wire, a film that stalled at the finish line — and come to believe storytelling is ultimately about human connection: stories that push characters toward their own self-empowerment and start a conversation about the love that makes us want to survive. Dallas & Allegra is the first film he's making without a gatekeeper across the table, just the people who believe in it — alongside the award-winning short Connected and the series Ghosts of War, a second-round Austin Film Festival selection.",
     links: [{ label: "jpenberth.com", href: "https://jpenberth.com/" }],
   },
   {
