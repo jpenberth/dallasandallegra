@@ -43,7 +43,8 @@ export const team: TeamMember[] = [
   {
     name: "J. Penberth Rabold",
     role: "Writer & Director",
-    bio: "Pittsburgh-based writer/director with 15+ years' experience as a director, first assistant director, and unit production manager across music videos, shorts, and features in Los Angeles. Directed the award-winning short Connected; developed the series Ghosts of War, a second-round selection at the Austin Film Festival.",
+    bio: "Pittsburgh- and LA-based writer/director with 15+ years' experience as a director, first assistant director, and unit production manager across music videos, shorts, and features. Directed the award-winning short Connected; developed the series Ghosts of War, a second-round selection at the Austin Film Festival.",
+    links: [{ label: "jpenberth.com", href: "https://jpenberth.com/" }],
   },
   {
     name: "Shannon Geary",
@@ -54,6 +55,7 @@ export const team: TeamMember[] = [
     name: "Daniel J. Lennox",
     role: "Director of Photography",
     bio: "Writer/director whose debut feature Jackson's Run won Best Feature at the 2012 CMM Film Festival in New York, with nine additional nominations. Known for award-winning shorts built on emotional intensity.",
+    links: [{ label: "sycamorefilms.com", href: "https://sycamorefilms.com/" }],
   },
   {
     name: "Jacob Luttrell",
