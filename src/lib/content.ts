@@ -50,6 +50,7 @@ export const team: TeamMember[] = [
     name: "Shannon Geary",
     role: "Producer",
     bio: "Pittsburgh-area producer and set photographer with 21 years' experience as a music educator and theater director before moving into film production.",
+    links: [{ label: "catalystory.com", href: "https://catalystory.com/" }],
   },
   {
     name: "Daniel J. Lennox",
