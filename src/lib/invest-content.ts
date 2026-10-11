@@ -65,15 +65,16 @@ export const invest = {
   },
 
   distribution: {
-    eyebrow: "Distribution Upside",
-    heading: "If this film earns, Executive Producers get paid first.",
+    eyebrow: "How You Get Repaid",
+    heading: "The short is the proof of concept. Here's how you get repaid.",
     paragraphs: [
-      "Dallas & Allegra is being made to be seen — festivals first, with streaming distribution (including Amazon) part of the plan after that. If and when the film generates distribution revenue, Executive Producers are first in line: 100% of that revenue goes to repaying your investment, plus 20%, before the production sees a dollar.",
-      "That repayment has its own order, too. $5,000+ Executive Producers are repaid first — in full, plus 20% — before a dollar goes toward repaying the $2,500+ tier. Once every $5,000+ position is fully repaid, the same 100%-plus-20% repayment applies to the $2,500+ tier next.",
-      "After both tiers are repaid in full, it's ongoing: 5% of residuals at the $2,500 level, 10% at the $5,000 level, for as long as the film continues to earn.",
+      "Dallas & Allegra isn't the finish line — it's the proof of concept. Whiplash followed the same path: an 18-minute short that won the Sundance Short Film Jury Award, then became the pitch that landed the feature its financing. We're building this short to do the same job — prove the story, the cast, and the team, then use that proof to finance the feature.",
+      "That's why the primary way Executive Producers get repaid isn't the short's own box office — it's the feature. If and when the feature secures financing, its budget is built with a recoupment line: Executive Producers are repaid their full investment, plus 20%, before a dollar goes toward production. Every Executive Producer, $2,500 or $5,000, is repaid the same way, at the same time.",
+      "That's the plan, not a guarantee — feature financing can take longer than expected, or may not happen at all. The fallback is the short's own distribution: festivals first, with streaming (including Amazon) part of the plan after that. If and when the short generates distribution revenue, the same terms apply — 100% of it goes to repaying your investment plus 20%, across all Executive Producers equally, before the production sees a dollar.",
+      "After you're fully repaid, through either path, it's ongoing: 5% of residuals at the $2,500 level, 10% at the $5,000 level, for as long as the film continues to earn.",
     ],
     caveat:
-      "Worth saying plainly: streaming revenue for short films is typically modest, and this isn't a guaranteed return on anything. Think of it as a meaningful bonus stacked on top of the credit, access, and relationship you're building — not the reason to say yes.",
+      "Worth saying plainly: feature financing isn't guaranteed, and streaming revenue for short films is typically modest — this isn't a guaranteed return on anything. Think of it as a meaningful bonus stacked on top of the credit, access, and relationship you're building — not the reason to say yes.",
   },
 
   howItWorks: {
@@ -121,11 +122,11 @@ export const invest = {
     },
     {
       q: "What if the feature version never gets made?",
-      a: "We believe in it — the short exists in part to prove the world and these characters can carry a feature. But the feature is not guaranteed. The $5,000+ tier includes feature credit if and when it happens; your Executive Producer credit on the short itself is never contingent on that.",
+      a: "We believe in it — the short exists in part to prove the world and these characters can carry a feature. But the feature is not guaranteed. The $5,000+ tier includes feature credit if and when it happens; your Executive Producer credit on the short itself is never contingent on that. If the feature doesn't happen, your repayment path becomes the short's own distribution revenue instead of the feature's financing.",
     },
     {
-      q: "Is the distribution revenue share guaranteed income?",
-      a: "No — it's structured to pay Executive Producers first if and when the film earns distribution revenue, but short films typically generate modest streaming income. It's a genuine part of the plan, not a promised return.",
+      q: "Is the repayment guaranteed?",
+      a: "No. The primary path is a recoupment line built into the feature's financing, if and when the feature secures funding — that's not guaranteed, and financing can take longer than hoped or not happen at all. The fallback, distribution revenue from the short itself, is real but typically modest for short films. Both are genuine parts of the plan, not promised returns.",
     },
   ],
 
