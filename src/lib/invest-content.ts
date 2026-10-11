@@ -68,13 +68,17 @@ export const invest = {
     eyebrow: "How You Get Repaid",
     heading: "The short is the proof of concept. Here's how you get repaid.",
     paragraphs: [
-      "Dallas & Allegra isn't the finish line — it's the proof of concept. Whiplash followed the same path: an 18-minute short that won the Sundance Short Film Jury Award, then became the pitch that landed the feature its financing. We're building this short to do the same job — prove the story, the cast, and the team, then use that proof to finance the feature.",
+      "Dallas & Allegra isn't the finish line — it's the proof of concept. Whiplash followed the same path: an 18-minute short that won the Sundance Short Film Jury Award, then became the pitch that landed the feature a $3.3 million budget from Bold Films. We're building this short to do the same job — prove the story, the cast, and the team, then use that proof to finance the feature.",
       "That's why the primary way Executive Producers get repaid isn't the short's own box office — it's the feature. If and when the feature secures financing, its budget is built with a recoupment line: Executive Producers are repaid their full investment, plus 20%, before the feature even goes into preproduction. Every Executive Producer, $2,500 or $5,000, is repaid the same way, at the same time.",
       "That's the plan, not a guarantee — feature financing can take longer than expected, or may not happen at all. The fallback is the short's own distribution: festivals first, with streaming (including Amazon) part of the plan after that. If and when the short generates distribution revenue, the same terms apply — 100% of it goes to repaying your investment plus 20%, across all Executive Producers equally, before the production sees a dollar.",
       "And that's not the end of it — the residual carries forward into the feature, too. After you're fully repaid, through either path, it's ongoing: 5% of residuals at the $2,500 level, 10% at the $5,000 level, on whatever the short and the feature go on to earn, for as long as either keeps earning.",
     ],
     caveat:
       "Worth saying plainly: feature financing isn't guaranteed, and streaming revenue for short films is typically modest — this isn't a guaranteed return on anything. Think of it as a meaningful bonus stacked on top of the credit, access, and relationship you're building — not the reason to say yes.",
+    source: {
+      text: "Damien Chazelle on how Whiplash's short film led to a $3.3M feature deal with Bold Films — TheWrap",
+      href: "https://www.thewrap.com/damien-chazelle-produced-by-whiplash-la-la-land/",
+    },
   },
 
   howItWorks: {

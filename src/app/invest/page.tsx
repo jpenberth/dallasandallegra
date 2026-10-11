@@ -228,6 +228,16 @@ export default function InvestPage() {
               </p>
             ))}
           </Reveal>
+          <Reveal delay={0.12}>
+            <a
+              href={invest.distribution.source.href}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-4 inline-block text-xs text-steel underline decoration-steel/40 underline-offset-2 transition-colors hover:text-cream"
+            >
+              {invest.distribution.source.text}
+            </a>
+          </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-6 border-l-2 border-rust-bright/50 pl-5 text-sm italic leading-relaxed text-steel">
               {invest.distribution.caveat}
