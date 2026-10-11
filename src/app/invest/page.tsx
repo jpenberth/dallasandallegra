@@ -86,6 +86,50 @@ export default function InvestPage() {
         </div>
       </section>
 
+      {/* ============ ATTACHMENT ============ */}
+      <section className="relative overflow-hidden bg-ink py-24 md:py-32">
+        <div className="absolute inset-0 opacity-15">
+          <Image
+            src="/images/dallas-mirror.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            aria-hidden
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/95 to-ink" />
+
+        <div className="relative mx-auto max-w-3xl px-6 text-center md:px-10">
+          <Reveal>
+            <p className="eyebrow text-ember">{invest.attachment.eyebrow}</p>
+            <h2 className="font-display mt-3 text-5xl leading-[0.98] text-cream sm:text-6xl md:text-7xl">
+              {invest.attachment.heading}
+            </h2>
+          </Reveal>
+
+          <Reveal delay={0.1} className="mt-8 flex flex-wrap items-center justify-center gap-2.5">
+            {["Insidious", "Jurassic World", "Iron Man 3", "Avengers: Endgame", "Avengers: Doomsday (reported)"].map(
+              (credit) => (
+                <span
+                  key={credit}
+                  className="eyebrow rounded-full border border-rust-bright/40 bg-rust/10 px-4 py-2 text-cream"
+                >
+                  {credit}
+                </span>
+              )
+            )}
+          </Reveal>
+
+          <Reveal delay={0.15} className="mt-10 space-y-5">
+            {invest.attachment.paragraphs.map((p) => (
+              <p key={p.slice(0, 24)} className="text-base leading-relaxed text-cream-dim md:text-lg">
+                {p}
+              </p>
+            ))}
+          </Reveal>
+        </div>
+      </section>
+
       {/* ============ TIERS ============ */}
       <section className="bg-ink py-24 md:py-32">
         <div className="mx-auto max-w-5xl px-6 md:px-10">
