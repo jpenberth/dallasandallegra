@@ -35,6 +35,7 @@ export const invest = {
         "Everything included in our Seed&Spark campaign at this level — including a Dallas & Allegra T-shirt, a signed napkin, and a signed title page",
         "First private link to the finished film, before it goes to a single festival",
         "A signed, numbered print of the film's key art",
+        "A numbered copy of the limited-edition Dallas & Allegra graphic novel — only 10 ever printed",
       ],
       featured: false,
     },
@@ -56,6 +57,13 @@ export const invest = {
       featured: true,
     },
   ],
+
+  graphicNovel: {
+    eyebrow: "Limited Edition",
+    heading: "Ten copies. Ever.",
+    paragraph:
+      "Dallas & Allegra, adapted into a graphic novel — the full short, panel by panel, in a print run of exactly 10. Every Executive Producer receives a numbered copy; once they're gone, they're gone. No reprint, no second run.",
+  },
 
   distribution: {
     eyebrow: "Distribution Upside",

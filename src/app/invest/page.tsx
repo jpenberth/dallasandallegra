@@ -186,6 +186,32 @@ export default function InvestPage() {
         </div>
       </section>
 
+      {/* ============ GRAPHIC NOVEL ============ */}
+      <section className="bg-ink py-24 md:py-32">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2 md:gap-16 md:px-10">
+          <Reveal>
+            <p className="eyebrow text-ember">{invest.graphicNovel.eyebrow}</p>
+            <h2 className="font-display mt-3 text-4xl leading-[0.98] text-cream sm:text-5xl">
+              {invest.graphicNovel.heading}
+            </h2>
+            <p className="mt-6 max-w-md text-base leading-relaxed text-cream-dim md:text-lg">
+              {invest.graphicNovel.paragraph}
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.1} className="mx-auto w-full max-w-xs">
+            <div className="flex aspect-[2/3] w-full flex-col items-center justify-center gap-3 rounded-sm border border-dashed border-cream/25 bg-navy-deep/40 px-6 text-center">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" className="text-steel">
+                <rect x="3" y="2" width="18" height="20" rx="1.5" />
+                <path d="M7 7h10M7 11h10M7 15h6" strokeLinecap="round" />
+              </svg>
+              <p className="eyebrow text-steel">Cover Mockup</p>
+              <p className="text-xs text-steel-dark">Coming soon</p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ============ DISTRIBUTION UPSIDE ============ */}
       <section className="bg-navy-deep py-24 md:py-32">
         <div className="mx-auto max-w-3xl px-6 md:px-10">
