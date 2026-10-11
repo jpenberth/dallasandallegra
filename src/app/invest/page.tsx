@@ -11,6 +11,32 @@ export const metadata: Metadata = {
   robots: {
     index: false,
     follow: false,
+    noimageindex: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  },
+  openGraph: {
+    title: "Only 8 Executive Producer Credits Exist.",
+    description:
+      "A limited number of Executive Producer positions on Dallas & Allegra.",
+    images: [
+      {
+        url: "/invest-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Only 8 Executive Producer credits exist. Want one? — Dallas & Allegra",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Only 8 Executive Producer Credits Exist.",
+    description:
+      "A limited number of Executive Producer positions on Dallas & Allegra.",
+    images: ["/invest-og.png"],
   },
 };
 
