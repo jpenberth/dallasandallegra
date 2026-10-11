@@ -141,6 +141,58 @@ export default function InvestPage() {
         </div>
       </section>
 
+      {/* ============ DISTRIBUTION UPSIDE ============ */}
+      <section className="bg-navy-deep py-24 md:py-32">
+        <div className="mx-auto max-w-3xl px-6 md:px-10">
+          <Reveal>
+            <p className="eyebrow text-ember">{invest.distribution.eyebrow}</p>
+            <h2 className="font-display mt-3 text-4xl leading-[0.98] text-cream sm:text-5xl">
+              {invest.distribution.heading}
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1} className="mt-8 space-y-5">
+            {invest.distribution.paragraphs.map((p) => (
+              <p key={p.slice(0, 24)} className="text-base leading-relaxed text-cream-dim md:text-lg">
+                {p}
+              </p>
+            ))}
+          </Reveal>
+          <Reveal delay={0.15}>
+            <p className="mt-6 border-l-2 border-rust-bright/50 pl-5 text-sm italic leading-relaxed text-steel">
+              {invest.distribution.caveat}
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ============ HOW THIS WORKS ============ */}
+      <section className="bg-ink py-24 md:py-32">
+        <div className="mx-auto max-w-4xl px-6 md:px-10">
+          <Reveal className="text-center">
+            <p className="eyebrow text-ember">{invest.howItWorks.eyebrow}</p>
+            <h2 className="font-display mx-auto mt-3 max-w-2xl text-4xl leading-[0.98] text-cream sm:text-5xl">
+              {invest.howItWorks.heading}
+            </h2>
+          </Reveal>
+
+          <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-6">
+            {invest.howItWorks.points.map((point, i) => (
+              <Reveal key={point.label} delay={i * 0.1}>
+                <p className="font-display text-3xl text-rust-bright">
+                  {String(i + 1).padStart(2, "0")}
+                </p>
+                <h3 className="font-display mt-2 text-lg tracking-wide text-cream">
+                  {point.label}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-cream-dim">
+                  {point.body}
+                </p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ============ BEYOND SEED&SPARK ============ */}
       <section className="bg-navy-deep py-24 md:py-32">
         <div className="mx-auto max-w-3xl px-6 text-center md:px-10">

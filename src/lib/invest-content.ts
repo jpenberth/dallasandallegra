@@ -21,9 +21,10 @@ export const invest = {
         "Your name on Dallas & Allegra, on screen and on IMDb, from the ground floor.",
       perks: [
         "Executive Producer credit on Dallas & Allegra — on-screen and on IMDb",
+        "Invited to every premiere and festival screening the film is accepted to",
         "Everything included in our Seed&Spark campaign at this level",
         "First private link to the finished film, before it goes to a single festival",
-        "A personal thank-you from the director",
+        "A signed, numbered print of the film's key art",
       ],
       featured: false,
     },
@@ -36,12 +37,43 @@ export const invest = {
         "Everything in the $2,500 tier",
         "Executive Producer credit on both the short and the feature-length version of Dallas & Allegra, if and when it moves into production",
         "A seat at the table for key creative conversations as the feature develops",
-        "Priority conversation about backend participation",
+        "A one-on-one call with the director before production begins",
         "An invitation to set, schedule permitting",
+        "Additional feature-stage perks, to be shared directly with $5,000+ Executive Producers as the feature develops",
       ],
       featured: true,
     },
   ],
+
+  distribution: {
+    eyebrow: "Distribution Upside",
+    heading: "If this film earns, Executive Producers get paid first.",
+    paragraphs: [
+      "Dallas & Allegra is being made to be seen — festivals first, with streaming distribution (including Amazon) part of the plan after that. If and when the film generates distribution revenue, Executive Producers are first in line: 100% of that revenue goes to repaying your investment, plus 20%, before the production sees a dollar.",
+      "After that, it's ongoing: 5% of residuals at the $2,500 level, 10% at the $5,000 level, for as long as the film continues to earn.",
+    ],
+    caveat:
+      "Worth saying plainly: streaming revenue for short films is typically modest, and this isn't a guaranteed return on anything. Think of it as a meaningful bonus stacked on top of the credit, access, and relationship you're building — not the reason to say yes.",
+  },
+
+  howItWorks: {
+    eyebrow: "How This Works",
+    heading: "Simple, safe, and entirely on your terms.",
+    points: [
+      {
+        label: "Pay by card, not cash",
+        body: "Everything runs through Seed&Spark, which accepts all major credit cards. No wire transfers, no cash changing hands — just a straightforward online pledge.",
+      },
+      {
+        label: "It's a pledge, not a charge",
+        body: "If the campaign doesn't reach 80% of its funding goal, you are not charged anything, and you keep 100% of your money. You're only ever committing to a film that's actually getting made.",
+      },
+      {
+        label: "Your credit is confirmed directly with us",
+        body: "Executive Producer credit and terms are documented directly with the production, separate from the crowdfunding pledge itself — reach out and we'll walk you through exactly how it works before anything is final.",
+      },
+    ],
+  },
 
   whyBeyond: {
     eyebrow: "Beyond Seed&Spark",
@@ -60,12 +92,20 @@ export const invest = {
       a: "Executive Producer commitments are confirmed directly with the production, not through the crowdfunding platform. Once you reach out, we'll walk through exactly how your credit and contribution are documented before any money changes hands.",
     },
     {
+      q: "What happens if the campaign doesn't reach its goal?",
+      a: "This is a pledge, not an immediate charge. If we don't reach 80% of our funding goal, you won't be charged anything and you keep 100% of your money — there's no risk in committing early.",
+    },
+    {
       q: "Is this a tax-deductible donation?",
       a: "No. Dallas & Allegra is an independent film production, not a non-profit, and contributions at any level aren't tax-deductible charitable donations.",
     },
     {
       q: "What if the feature version never gets made?",
       a: "We believe in it — the short exists in part to prove the world and these characters can carry a feature. But the feature is not guaranteed. The $5,000+ tier includes feature credit if and when it happens; your Executive Producer credit on the short itself is never contingent on that.",
+    },
+    {
+      q: "Is the distribution revenue share guaranteed income?",
+      a: "No — it's structured to pay Executive Producers first if and when the film earns distribution revenue, but short films typically generate modest streaming income. It's a genuine part of the plan, not a promised return.",
     },
   ],
 
