@@ -113,6 +113,7 @@ export default function InvestPage() {
                   <h3 className="font-display mt-3 text-xl tracking-wide text-cream">
                     {tier.name}
                   </h3>
+                  <p className="eyebrow mt-2 text-ember">{tier.slots}</p>
                   <p className="mt-3 text-sm leading-relaxed text-cream-dim">
                     {tier.description}
                   </p>

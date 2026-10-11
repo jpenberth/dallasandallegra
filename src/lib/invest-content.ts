@@ -2,7 +2,7 @@ export const invest = {
   eyebrow: "By Invitation — Executive Producer",
   headline: "This Is Your Seat At The Table.",
   subhead:
-    "Dallas & Allegra is fully cast and crewed, shoot dates are locked, and the team is self-financing to get there. We're opening a limited number of Executive Producer positions to close the gap — before production, not after.",
+    "Dallas & Allegra is fully cast and crewed, shoot dates are locked, and the team is self-financing to get there. We're opening exactly 8 Executive Producer positions — 4 at $2,500, 4 at $5,000 — to close the gap before production, not after.",
 
   opportunity: {
     eyebrow: "The Opportunity",
@@ -17,6 +17,7 @@ export const invest = {
     {
       amount: "$2,500+",
       name: "Executive Producer — The Short",
+      slots: "Only 4 positions available",
       description:
         "Your name on Dallas & Allegra, on screen and on IMDb, from the ground floor.",
       perks: [
@@ -31,6 +32,7 @@ export const invest = {
     {
       amount: "$5,000+",
       name: "Executive Producer — Short & Feature",
+      slots: "Only 4 positions available",
       description:
         "Everything in the short, plus a stake in where this story goes next.",
       perks: [
@@ -112,7 +114,7 @@ export const invest = {
 
   closing: {
     heading: "The budget is set. The dates are locked. What's left is you.",
-    sub: "Executive Producer positions are limited and close once production funding is secured.",
+    sub: "Only 8 Executive Producer positions exist — 4 at $2,500, 4 at $5,000 — and they close once production funding is secured.",
     cta: "Claim Your Executive Producer Credit",
   },
 };
