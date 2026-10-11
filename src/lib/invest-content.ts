@@ -48,7 +48,7 @@ export const invest = {
       perks: [
         "Everything in the $2,500 tier",
         "Executive Producer credit on both the short and the feature-length version of Dallas & Allegra, if and when it moves into production",
-        "A seat at the table for key creative conversations as the feature develops",
+        "First option to invest in the feature's financing round, before it opens to anyone else",
         "Guaranteed priority negotiation for Executive Producer backend points on the feature, should it move into production",
         "An invitation to set to meet the cast, schedule permitting",
         "The original song written and performed by Jacob Luttrell (JACOBISDEAD) for the film — yours before it's released anywhere else",
