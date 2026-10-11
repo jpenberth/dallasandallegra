@@ -79,7 +79,10 @@ export default function InvestPage() {
           </a>
 
           <Reveal className="mt-10">
-            <p className="eyebrow text-ember">{invest.eyebrow}</p>
+            <div className="inline-flex items-center gap-2 rounded-full bg-rust-bright px-5 py-2 text-xs font-semibold uppercase tracking-wider text-ink sm:text-sm">
+              {invest.deadline}
+            </div>
+            <p className="eyebrow mt-5 text-ember">{invest.eyebrow}</p>
             <h1 className="font-display mx-auto mt-4 max-w-3xl text-4xl leading-[0.98] text-cream sm:text-5xl md:text-6xl">
               {invest.headline}
             </h1>
