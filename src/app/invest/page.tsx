@@ -108,7 +108,7 @@ export default function InvestPage() {
           </Reveal>
 
           <Reveal delay={0.1} className="mt-8 flex flex-wrap items-center justify-center gap-2.5">
-            {["Insidious", "Jurassic World", "Iron Man 3", "Avengers: Endgame", "Avengers: Doomsday (reported)"].map(
+            {["Insidious", "Jurassic World", "Iron Man 3", "Avengers: Endgame", "Avengers: Doomsday (rumored)"].map(
               (credit) => (
                 <span
                   key={credit}

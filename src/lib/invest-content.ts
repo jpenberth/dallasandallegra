@@ -17,7 +17,7 @@ export const invest = {
     eyebrow: "Attached",
     heading: "Ty Simpkins is Dallas.",
     paragraphs: [
-      "Insidious. Jurassic World. Iron Man 3. Avengers: Endgame. Reportedly in talks for Avengers: Doomsday. Ty Simpkins is attached to star as Dallas — signed on before a single Executive Producer position was ever offered.",
+      "Insidious. Jurassic World. Iron Man 3. Avengers: Endgame. Rumored for Avengers: Doomsday. Ty Simpkins is attached to star as Dallas — signed on before a single Executive Producer position was ever offered.",
       "And it doesn't end with the short. Simpkins is attached to the feature version of Dallas & Allegra as well, which means the $5,000+ tier's feature credit isn't a hope for someday — it's a seat on a project that already has its lead.",
     ],
   },
