@@ -40,6 +40,7 @@ export const invest = {
         "Guaranteed priority negotiation for Executive Producer backend points on the feature, should it move into production",
         "An invitation to set to meet the cast, schedule permitting",
         "The original song written and performed by Jacob Luttrell (JACOBISDEAD) for the film — yours before it's released anywhere else",
+        "A separate original song, written and produced by Jacob Luttrell, for you or anyone you choose — full ownership included",
       ],
       featured: true,
     },
