@@ -69,7 +69,8 @@ export const invest = {
     heading: "If this film earns, Executive Producers get paid first.",
     paragraphs: [
       "Dallas & Allegra is being made to be seen — festivals first, with streaming distribution (including Amazon) part of the plan after that. If and when the film generates distribution revenue, Executive Producers are first in line: 100% of that revenue goes to repaying your investment, plus 20%, before the production sees a dollar.",
-      "After that, it's ongoing: 5% of residuals at the $2,500 level, 10% at the $5,000 level, for as long as the film continues to earn.",
+      "That repayment has its own order, too. $5,000+ Executive Producers are repaid first — in full, plus 20% — before a dollar goes toward repaying the $2,500+ tier. Once every $5,000+ position is fully repaid, the same 100%-plus-20% repayment applies to the $2,500+ tier next.",
+      "After both tiers are repaid in full, it's ongoing: 5% of residuals at the $2,500 level, 10% at the $5,000 level, for as long as the film continues to earn.",
     ],
     caveat:
       "Worth saying plainly: streaming revenue for short films is typically modest, and this isn't a guaranteed return on anything. Think of it as a meaningful bonus stacked on top of the credit, access, and relationship you're building — not the reason to say yes.",
