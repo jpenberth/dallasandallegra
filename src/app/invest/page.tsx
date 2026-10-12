@@ -5,7 +5,7 @@ import { campaignUrl } from "@/lib/content";
 import { invest } from "@/lib/invest-content";
 
 export const metadata: Metadata = {
-  title: "Executive Producer — Dallas & Allegra",
+  title: "Executive Producer: Dallas & Allegra",
   description:
     "A limited number of Executive Producer positions on Dallas & Allegra.",
   robots: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "/invest-og.png",
         width: 1200,
         height: 630,
-        alt: "Only 8 Executive Producer credits exist. Want one? — Dallas & Allegra",
+        alt: "Only 8 Executive Producer credits exist. Want one? Dallas & Allegra.",
       },
     ],
   },
