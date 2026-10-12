@@ -217,29 +217,29 @@ export default function InvestPage() {
 
       {/* ============ GRAPHIC NOVEL ============ */}
       <section className="bg-ink py-24 md:py-32">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2 md:gap-16 md:px-10">
+        <div className="mx-auto max-w-2xl px-6 text-center md:px-10">
           <Reveal>
             <p className="eyebrow text-ember">{invest.graphicNovel.eyebrow}</p>
             <h2 className="font-display mt-3 text-4xl leading-[0.98] text-cream sm:text-5xl">
               {invest.graphicNovel.heading}
             </h2>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-cream-dim md:text-lg">
+            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-cream-dim md:text-lg">
               {invest.graphicNovel.paragraph}
             </p>
           </Reveal>
-
-          <Reveal delay={0.1} className="mx-auto w-full max-w-xs">
-            <div className="relative aspect-[2/3] w-full overflow-hidden rounded-sm shadow-2xl shadow-ink">
-              <Image
-                src="/images/graphic-novel-cover.webp"
-                alt="Dallas & Allegra limited-edition graphic novel cover: Dallas and Allegra embrace beneath a full moon over the Pittsburgh skyline, rendered in a noir red-and-black comic art style."
-                fill
-                className="object-cover"
-                sizes="(min-width: 768px) 320px, 80vw"
-              />
-            </div>
-          </Reveal>
         </div>
+
+        <Reveal delay={0.1} className="mx-auto mt-14 max-w-5xl px-6 md:px-10">
+          <div className="relative aspect-[3/2] w-full overflow-hidden rounded-sm shadow-2xl shadow-ink">
+            <Image
+              src="/images/graphic-novel-collage.webp"
+              alt="Dallas & Allegra limited-edition graphic novel: full cover, spine, and an open two-page spread showing panel art in a noir red-and-black comic art style."
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 1024px, 90vw"
+            />
+          </div>
+        </Reveal>
       </section>
 
       {/* ============ DISTRIBUTION UPSIDE ============ */}
