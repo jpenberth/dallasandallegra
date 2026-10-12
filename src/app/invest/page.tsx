@@ -229,13 +229,14 @@ export default function InvestPage() {
           </Reveal>
 
           <Reveal delay={0.1} className="mx-auto w-full max-w-xs">
-            <div className="flex aspect-[2/3] w-full flex-col items-center justify-center gap-3 rounded-sm border border-dashed border-cream/25 bg-navy-deep/40 px-6 text-center">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" className="text-steel">
-                <rect x="3" y="2" width="18" height="20" rx="1.5" />
-                <path d="M7 7h10M7 11h10M7 15h6" strokeLinecap="round" />
-              </svg>
-              <p className="eyebrow text-steel">Cover Mockup</p>
-              <p className="text-xs text-steel-dark">Coming soon</p>
+            <div className="relative aspect-[2/3] w-full overflow-hidden rounded-sm shadow-2xl shadow-ink">
+              <Image
+                src="/images/graphic-novel-cover.webp"
+                alt="Dallas & Allegra limited-edition graphic novel cover: Dallas and Allegra embrace beneath a full moon over the Pittsburgh skyline, rendered in a noir red-and-black comic art style."
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 320px, 80vw"
+              />
             </div>
           </Reveal>
         </div>
