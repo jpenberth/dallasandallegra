@@ -101,6 +101,29 @@ export const invest = {
     ],
   },
 
+  howToPledge: {
+    eyebrow: "How To Pledge",
+    heading: "Four Steps. That's It.",
+    steps: [
+      {
+        label: "Tap the button below",
+        body: "It takes you straight to our Seed&Spark campaign page.",
+      },
+      {
+        label: "Select the Incentives tab",
+        body: "Near the top of the campaign page, tap Incentives to see every pledge tier.",
+      },
+      {
+        label: "Find your Executive Producer tier",
+        body: "Scroll to the $2,500 or $5,000 Executive Producer tier and select it.",
+      },
+      {
+        label: "Enter your card and confirm",
+        body: "That's it. We'll follow up directly with your formal Executive Producer agreement, which gets signed once production funding is secured.",
+      },
+    ],
+  },
+
   whyBeyond: {
     eyebrow: "Beyond Seed&Spark",
     heading: "Backing a film and producing one aren't the same thing.",

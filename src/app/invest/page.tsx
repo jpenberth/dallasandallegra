@@ -304,6 +304,42 @@ export default function InvestPage() {
         </div>
       </section>
 
+      {/* ============ HOW TO PLEDGE ============ */}
+      <section className="bg-ink py-24 md:py-32">
+        <div className="mx-auto max-w-3xl px-6 md:px-10">
+          <Reveal className="text-center">
+            <p className="eyebrow text-ember">{invest.howToPledge.eyebrow}</p>
+            <h2 className="font-display mt-3 text-4xl leading-[0.98] text-cream sm:text-5xl">
+              {invest.howToPledge.heading}
+            </h2>
+          </Reveal>
+
+          <div className="mt-14 space-y-8">
+            {invest.howToPledge.steps.map((step, i) => (
+              <Reveal key={step.label} delay={i * 0.08}>
+                <div className="flex items-start gap-5 rounded-sm border border-cream/10 bg-navy-deep/60 p-6">
+                  <span className="font-display flex h-11 w-11 flex-none items-center justify-center rounded-full bg-rust-bright text-xl text-ink">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <h3 className="font-display text-lg tracking-wide text-cream">
+                      {step.label}
+                    </h3>
+                    <p className="mt-1.5 text-sm leading-relaxed text-cream-dim md:text-base">
+                      {step.body}
+                    </p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal delay={0.4} className="mt-12 text-center">
+            <CTAButton />
+          </Reveal>
+        </div>
+      </section>
+
       {/* ============ BEYOND SEED&SPARK ============ */}
       <section className="bg-navy-deep py-24 md:py-32">
         <div className="mx-auto max-w-3xl px-6 text-center md:px-10">
