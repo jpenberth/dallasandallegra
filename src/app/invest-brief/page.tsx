@@ -335,6 +335,14 @@ export default function InvestBriefPage() {
                     <p className="mt-1.5 text-sm leading-relaxed text-cream-dim md:text-base">
                       {step.body}
                     </p>
+                    {"href" in step && step.href && (
+                      <a
+                        href={step.href}
+                        className="mt-3 inline-flex items-center justify-center rounded-full bg-rust-bright px-5 py-2.5 text-xs font-medium tracking-wide text-ink transition-transform hover:scale-[1.03] hover:bg-ember"
+                      >
+                        {step.linkText}
+                      </a>
+                    )}
                   </div>
                 </div>
               </Reveal>

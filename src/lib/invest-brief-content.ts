@@ -113,13 +113,26 @@ export const investBrief = {
 
   howToPledge: {
     eyebrow: "How To Pledge",
-    heading: "Four Steps. That's It.",
+    heading: "Five Steps. That's It.",
     steps: [
       { label: "Tap the button below", body: "It takes you straight to our Seed&Spark campaign page." },
       { label: "Select the Incentives tab", body: "Near the top of the campaign page, tap Incentives to see every pledge tier." },
       { label: "Find your Executive Producer tier", body: "Scroll to the $2,500 or $5,000 Executive Producer tier and select it." },
-      { label: "Enter your card and confirm", body: "That's it. We'll follow up directly with your formal Executive Producer agreement, which gets signed once production funding is secured." },
+      { label: "Enter your card and confirm", body: "Complete your pledge on Seed&Spark." },
+      {
+        label: "Submit your EP info",
+        body: "Come back here and give us what we need to prepare your Executive Producer agreement: your legal name, contact info, and mailing address.",
+        href: "/invest-brief/ep-info",
+        linkText: "Submit Your EP Info",
+      },
     ],
+  },
+
+  epIntake: {
+    eyebrow: "Almost There",
+    heading: "Finish Your Executive Producer Setup",
+    lede: "Already pledged on Seed&Spark? Give us what we need to prepare your Executive Producer agreement. We'll follow up directly once it's ready to sign.",
+    success: "Got it. We'll be in touch with your Executive Producer agreement soon.",
   },
 
   whyBeyond: {
