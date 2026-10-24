@@ -3,7 +3,7 @@ export const storyboards = {
   heading: "Frame By Frame",
   subhead: "The complete storyboards for Dallas & Allegra.",
   video: {
-    src: "https://www.dropbox.com/scl/fi/hgi41jba0jxy2stf004bk/Dallas-Allegra-Storyboards-v7-102426.mov?rlkey=2lnf6brplclov10znlat4zd23&st=stlf5qu5&dl=1",
+    src: "https://drive.google.com/file/d/1eD06R4zW3mPGUStIh4NmANIEVeeI2vpx/preview",
     poster: "/images/storyboards-poster.webp",
   },
   cast: [
@@ -15,7 +15,6 @@ export const storyboards = {
         "Jurassic World",
         "Iron Man 3",
         "Avengers: Endgame",
-        "Avengers: Doomsday (rumored)",
       ],
     },
     {
