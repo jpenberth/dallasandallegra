@@ -16,6 +16,24 @@ export const metadata: Metadata = {
       noimageindex: true,
     },
   },
+  openGraph: {
+    title: "Exclusive First Look: Dallas & Allegra",
+    description: "An exclusive first look at Dallas & Allegra for our investors.",
+    images: [
+      {
+        url: "/images/storyboards-poster.webp",
+        width: 1672,
+        height: 941,
+        alt: "Dallas and Allegra key art: the couple stands silhouetted before a full moon over the Pittsburgh skyline, with the film's title treatment.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Exclusive First Look: Dallas & Allegra",
+    description: "An exclusive first look at Dallas & Allegra for our investors.",
+    images: ["/images/storyboards-poster.webp"],
+  },
 };
 
 export default function StoryboardsPage() {
