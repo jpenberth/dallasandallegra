@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { campaignUrl } from "@/lib/content";
 
 const links = [
   { href: "#story", label: "Story" },
@@ -42,24 +41,7 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
-          <a
-            href={campaignUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="eyebrow rounded-full border border-cream/25 px-5 py-2.5 text-cream transition-colors hover:border-rust-bright hover:bg-rust/20"
-          >
-            Support
-          </a>
         </div>
-
-        <a
-          href={campaignUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="eyebrow rounded-full border border-cream/25 px-4 py-2 text-cream md:hidden"
-        >
-          Support
-        </a>
       </nav>
     </header>
   );

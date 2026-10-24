@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { film, campaignUrl } from "@/lib/content";
+import { film } from "@/lib/content";
 
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -59,16 +59,8 @@ export default function Hero() {
 
         <div className="mt-8 flex flex-wrap items-center gap-4 animate-fade-up [animation-delay:140ms]">
           <a
-            href={campaignUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-full bg-rust-bright px-7 py-3.5 text-sm font-medium tracking-wide text-ink transition-transform hover:scale-[1.03] hover:bg-ember"
-          >
-            Support the Film
-          </a>
-          <a
             href="#newsletter"
-            className="rounded-full border border-cream/30 px-7 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:border-cream hover:bg-cream/10"
+            className="rounded-full bg-rust-bright px-7 py-3.5 text-sm font-medium tracking-wide text-ink transition-transform hover:scale-[1.03] hover:bg-ember"
           >
             Follow the Journey
           </a>

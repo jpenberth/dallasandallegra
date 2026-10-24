@@ -80,4 +80,7 @@ export const social = {
   instagramHandle: "@dallasandallegra",
 };
 
+// Used only by the hidden /invest and /invest-brief Executive Producer
+// pages, which still route pledges through Seed&Spark. Not referenced
+// anywhere on the main public site.
 export const campaignUrl = "https://seedandspark.com/fund/dallasallegra";
