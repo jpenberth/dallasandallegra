@@ -21,12 +21,7 @@ export const storyboards = {
     {
       role: "Allegra Cunningham",
       actor: "Morgan Ryan",
-      credits: [
-        "Shirley",
-        "This Time I Choose Myself",
-        "The Hacker Heiress Strikes Back",
-        "Swapped Heiress by My Bestie",
-      ],
+      credits: ["Shirley", "Green Ribbon"],
     },
     {
       role: "Juliette Cunningham",
