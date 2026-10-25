@@ -3,7 +3,7 @@ export const storyboards = {
   heading: "Frame By Frame",
   subhead: "The complete storyboards for Dallas & Allegra.",
   video: {
-    src: "https://drive.google.com/file/d/1eD06R4zW3mPGUStIh4NmANIEVeeI2vpx/preview",
+    src: "https://www.youtube.com/embed/sVIkQCc_gmo?rel=0&modestbranding=1&autoplay=1",
     poster: "/images/storyboards-poster.webp",
   },
   cast: [

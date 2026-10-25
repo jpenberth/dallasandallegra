@@ -18,7 +18,7 @@ export default function VideoPlayer({
         <iframe
           src={src}
           className="h-full w-full"
-          allow="autoplay"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
           title="Dallas & Allegra storyboards"
         />
