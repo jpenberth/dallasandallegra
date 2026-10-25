@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
+import VideoPlayer from "@/components/VideoPlayer";
 import { campaignUrl } from "@/lib/content";
 import { investBrief } from "@/lib/invest-brief-content";
+import { storyboards } from "@/lib/storyboards-content";
 
 export const metadata: Metadata = {
   title: "Executive Producer: Dallas & Allegra",
@@ -169,6 +171,51 @@ export default function InvestBriefPage() {
               </p>
             ))}
           </Reveal>
+        </div>
+      </section>
+
+      {/* ============ STORYBOARDS ============ */}
+      <section className="bg-navy-deep py-24 md:py-32">
+        <div className="mx-auto max-w-4xl px-6 md:px-10">
+          <Reveal className="text-center">
+            <p className="eyebrow text-ember">Exclusive First Look</p>
+            <h2 className="font-display mx-auto mt-3 max-w-2xl text-4xl leading-[0.98] text-cream sm:text-5xl">
+              The Film, In Motion
+            </h2>
+            <p className="mx-auto mt-5 max-w-md text-base leading-relaxed text-cream-dim">
+              The complete storyboards for Dallas &amp; Allegra, with the confirmed cast.
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.1} className="mt-12">
+            <VideoPlayer src={storyboards.video.src} poster={storyboards.video.poster} />
+          </Reveal>
+
+          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {storyboards.cast.map((member, i) => (
+              <Reveal key={member.role} delay={i * 0.08}>
+                <div className="h-full rounded-sm border border-cream/10 bg-ink/50 p-7">
+                  <p className="font-display text-2xl tracking-wide text-cream">
+                    {member.role}
+                  </p>
+                  <p className="eyebrow mt-1.5 text-ember">{member.actor}</p>
+
+                  {member.credits.length > 0 && (
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {member.credits.map((credit) => (
+                        <span
+                          key={credit}
+                          className="rounded-full border border-cream/20 px-3.5 py-1 text-xs tracking-wide text-cream-dim"
+                        >
+                          {credit}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
