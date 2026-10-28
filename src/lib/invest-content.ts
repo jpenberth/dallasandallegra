@@ -1,5 +1,5 @@
 export const invest = {
-  deadline: "Funding closes October 30",
+  deadline: "Funding closes November 14",
   eyebrow: "By Invitation: Executive Producer",
   headline: "This Is Your Seat At The Table.",
   subhead:
@@ -160,7 +160,7 @@ export const invest = {
 
   closing: {
     heading: "The budget is set. The dates are locked. What's left is you.",
-    sub: "Only 8 Executive Producer positions exist: 4 at $2,500 and 4 at $5,000. Funding needs to close by October 30.",
+    sub: "Only 8 Executive Producer positions exist: 4 at $2,500 and 4 at $5,000. Funding needs to close by November 14.",
     cta: "Claim Your Executive Producer Credit",
   },
 };

@@ -243,7 +243,30 @@ export default function InvestBriefPage() {
                   <h3 className="font-display mt-3 text-xl tracking-wide text-cream">
                     {tier.name}
                   </h3>
-                  <p className="eyebrow mt-2 text-ember">{tier.slots}</p>
+                  <div className="mt-4 flex items-center gap-3">
+                    <div className="flex gap-1.5" aria-hidden>
+                      {Array.from({ length: tier.totalSeats }).map((_, seatI) => {
+                        const isClaimed = seatI < tier.claimed;
+                        return (
+                          <span
+                            key={seatI}
+                            className={`relative flex h-6 w-6 items-center justify-center rounded-sm border ${
+                              isClaimed
+                                ? "border-steel/30 bg-steel/10"
+                                : "border-rust-bright/50 bg-rust-bright"
+                            }`}
+                          >
+                            {isClaimed && (
+                              <span className="absolute h-[1.5px] w-5 rotate-45 bg-steel/70" />
+                            )}
+                          </span>
+                        );
+                      })}
+                    </div>
+                    <p className="eyebrow text-ember">
+                      {tier.totalSeats - tier.claimed} of {tier.totalSeats} seats remaining
+                    </p>
+                  </div>
 
                   <ul className="mt-6 flex-1 space-y-3">
                     {tier.perks.map((perk) => (

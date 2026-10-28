@@ -1,5 +1,5 @@
 export const investBrief = {
-  deadline: "Funding closes October 30",
+  deadline: "Funding closes November 14",
   eyebrow: "By Invitation",
   headline: "This Is The Deal.",
   subhead:
@@ -41,7 +41,8 @@ export const investBrief = {
     {
       amount: "$2,500+",
       name: "Executive Producer: The Short",
-      slots: "4 seats",
+      totalSeats: 4,
+      claimed: 1,
       perks: [
         "EP credit, on-screen and on IMDb",
         "Every premiere and festival screening",
@@ -55,7 +56,8 @@ export const investBrief = {
     {
       amount: "$5,000+",
       name: "Executive Producer: Short & Feature",
-      slots: "4 seats",
+      totalSeats: 4,
+      claimed: 0,
       perks: [
         "Everything in the $2,500 tier",
         "EP credit on the feature too, if and when it moves into production",
@@ -171,7 +173,7 @@ export const investBrief = {
 
   closing: {
     heading: "The budget is set. The dates are locked. What's left is you.",
-    sub: "8 Executive Producer positions exist: 4 at $2,500 and 4 at $5,000. Funding needs to close by October 30.",
+    sub: "8 Executive Producer positions exist: 4 at $2,500 and 4 at $5,000. Funding needs to close by November 14.",
     cta: "Claim Your Executive Producer Credit",
   },
 };
