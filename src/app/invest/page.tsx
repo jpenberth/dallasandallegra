@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
-import { campaignUrl } from "@/lib/content";
 import { invest } from "@/lib/invest-content";
 
 export const metadata: Metadata = {
@@ -43,9 +42,7 @@ export const metadata: Metadata = {
 function CTAButton({ className = "" }: { className?: string }) {
   return (
     <a
-      href={campaignUrl}
-      target="_blank"
-      rel="noreferrer"
+      href="/invest-brief/ep-info"
       className={`inline-flex items-center justify-center rounded-full bg-rust-bright px-8 py-4 text-sm font-medium tracking-wide text-ink transition-transform hover:scale-[1.03] hover:bg-ember ${className}`}
     >
       {invest.closing.cta}
@@ -328,6 +325,14 @@ export default function InvestPage() {
                     <p className="mt-1.5 text-sm leading-relaxed text-cream-dim md:text-base">
                       {step.body}
                     </p>
+                    {"href" in step && step.href && (
+                      <a
+                        href={step.href}
+                        className="mt-3 inline-flex items-center justify-center rounded-full bg-rust-bright px-5 py-2.5 text-xs font-medium tracking-wide text-ink transition-transform hover:scale-[1.03] hover:bg-ember"
+                      >
+                        {step.linkText}
+                      </a>
+                    )}
                   </div>
                 </div>
               </Reveal>
@@ -336,21 +341,6 @@ export default function InvestPage() {
 
           <Reveal delay={0.4} className="mt-12 text-center">
             <CTAButton />
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ============ BEYOND SEED&SPARK ============ */}
-      <section className="bg-navy-deep py-24 md:py-32">
-        <div className="mx-auto max-w-3xl px-6 text-center md:px-10">
-          <Reveal>
-            <p className="eyebrow text-ember">{invest.whyBeyond.eyebrow}</p>
-            <h2 className="font-display mt-3 text-4xl leading-[0.98] text-cream sm:text-5xl">
-              {invest.whyBeyond.heading}
-            </h2>
-            <p className="font-serif mx-auto mt-6 max-w-2xl text-lg italic leading-relaxed text-cream-dim">
-              {invest.whyBeyond.paragraph}
-            </p>
           </Reveal>
         </div>
       </section>

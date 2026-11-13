@@ -33,7 +33,7 @@ export const invest = {
       perks: [
         "Executive Producer credit on Dallas & Allegra, on-screen and on IMDb",
         "Invited to every premiere and festival screening the film is accepted to",
-        "Everything included in our Seed&Spark campaign at this level, including a Dallas & Allegra T-shirt, a signed napkin, and a signed title page",
+        "A Dallas & Allegra T-shirt, a signed napkin, and a signed title page",
         "First private link to the finished film, before it goes to a single festival",
         "A signed, numbered print of the film's key art",
         "A numbered copy of the limited-edition Dallas & Allegra graphic novel. Only 10 ever printed",
@@ -87,48 +87,47 @@ export const invest = {
     heading: "Simple, safe, and entirely on your terms.",
     points: [
       {
-        label: "Pay by card, not cash",
-        body: "Everything runs through Seed&Spark, which accepts all major credit cards. No wire transfers, no cash changing hands. Just a straightforward online pledge.",
+        label: "Pay by card or bank transfer",
+        body: "We send a Square invoice for your contribution. Pay by credit or debit card, or by direct bank transfer (ACH) — whichever works for you. No cash, no wires outside that.",
       },
       {
-        label: "It's a pledge, not a charge",
-        body: "If the campaign doesn't reach 80% of its funding goal, you are not charged anything, and you keep 100% of your money. You're only ever committing to a film that's actually getting made.",
+        label: "One invoice, one agreement",
+        body: "Your Executive Producer Agreement is included with the invoice, so you see the full terms before anything is paid.",
       },
       {
         label: "Your credit is confirmed directly with us",
-        body: "Executive Producer credit and terms are documented directly with the production, separate from the crowdfunding pledge itself. Reach out and we'll walk you through exactly how it works before anything is final.",
+        body: "Executive Producer credit and terms are documented directly in your agreement with the production. Reach out and we'll walk you through exactly how it works before anything is final.",
       },
     ],
   },
 
   howToPledge: {
-    eyebrow: "How To Pledge",
-    heading: "Four Steps. That's It.",
+    eyebrow: "How To Invest",
+    heading: "Five Steps. That's It.",
     steps: [
       {
-        label: "Tap the button below",
-        body: "It takes you straight to our Seed&Spark campaign page.",
+        label: "Submit your info",
+        body: "Tell us your legal name, contact info, mailing address, and which tier you want.",
+        href: "/invest-brief/ep-info",
+        linkText: "Submit Your Info",
       },
       {
-        label: "Select the Incentives tab",
-        body: "Near the top of the campaign page, tap Incentives to see every pledge tier.",
+        label: "We send your agreement and invoice",
+        body: "We prepare your Executive Producer Agreement and a Square invoice for your contribution, and send both to you.",
       },
       {
-        label: "Find your Executive Producer tier",
-        body: "Scroll to the $2,500 or $5,000 Executive Producer tier and select it.",
+        label: "Review and sign",
+        body: "Read through the agreement. Ask us anything before you sign.",
       },
       {
-        label: "Enter your card and confirm",
-        body: "That's it. We'll follow up directly with your formal Executive Producer agreement, which gets signed once production funding is secured.",
+        label: "Pay by card or bank transfer",
+        body: "Pay the Square invoice however works for you — credit/debit card or direct bank transfer (ACH).",
+      },
+      {
+        label: "You're an Executive Producer",
+        body: "Once it's signed and paid, your seat is locked in.",
       },
     ],
-  },
-
-  whyBeyond: {
-    eyebrow: "Beyond Seed&Spark",
-    heading: "Backing a film and producing one aren't the same thing.",
-    paragraph:
-      "Our Seed&Spark campaign is open to everyone, and every reward tier there is real and honored in full. Executive Producer positions are a different relationship: fewer people, more access, and your name carried forward as this story grows from a short into, we believe, something bigger. If you want to help us get this made, Seed&Spark is the place. If you want to help build it, this is.",
   },
 
   faq: [
@@ -138,11 +137,11 @@ export const invest = {
     },
     {
       q: "How do I know my credit is guaranteed?",
-      a: "Executive Producer commitments are confirmed directly with the production, not through the crowdfunding platform. Once you reach out, we'll walk through exactly how your credit and contribution are documented before any money changes hands.",
+      a: "Executive Producer credit and contribution terms are spelled out directly in your Executive Producer Agreement, which we send before any invoice is paid. Reach out and we'll walk through exactly how it's documented before anything is final.",
     },
     {
-      q: "What happens if the campaign doesn't reach its goal?",
-      a: "This is a pledge, not an immediate charge. If we don't reach 80% of our funding goal, you won't be charged anything and you keep 100% of your money. There's no risk in committing early.",
+      q: "How do I actually pay?",
+      a: "Directly, through a Square invoice we send you, by credit/debit card or bank transfer (ACH). There's no crowdfunding platform or campaign goal involved. Once your invoice is paid, your contribution is confirmed.",
     },
     {
       q: "Is this a tax-deductible donation?",

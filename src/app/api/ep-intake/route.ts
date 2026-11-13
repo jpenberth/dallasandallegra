@@ -14,7 +14,6 @@ type Body = {
   phone?: string;
   mailingAddress?: string;
   tier?: string;
-  seedSparkName?: string;
   notes?: string;
 };
 
@@ -31,7 +30,6 @@ async function getSql() {
       phone TEXT NOT NULL,
       mailing_address TEXT NOT NULL,
       tier TEXT NOT NULL,
-      seedspark_name TEXT,
       notes TEXT,
       created_at TIMESTAMPTZ NOT NULL DEFAULT now()
     )
@@ -53,7 +51,6 @@ export async function POST(req: NextRequest) {
   const phone = body.phone?.trim();
   const mailingAddress = body.mailingAddress?.trim();
   const tier = body.tier?.trim();
-  const seedSparkName = body.seedSparkName?.trim() || null;
   const notes = body.notes?.trim() || null;
 
   if (!fullName) {
@@ -69,7 +66,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Enter your mailing address." }, { status: 400 });
   }
   if (tier !== "$2,500+" && tier !== "$5,000+") {
-    return NextResponse.json({ error: "Select the tier you pledged." }, { status: 400 });
+    return NextResponse.json({ error: "Select the tier you want." }, { status: 400 });
   }
 
   let persisted = false;
@@ -78,9 +75,9 @@ export async function POST(req: NextRequest) {
     if (sql) {
       await sql`
         INSERT INTO ep_intake
-          (full_name, entity_name, email, phone, mailing_address, tier, seedspark_name, notes)
+          (full_name, entity_name, email, phone, mailing_address, tier, notes)
         VALUES
-          (${fullName}, ${entityName}, ${email}, ${phone}, ${mailingAddress}, ${tier}, ${seedSparkName}, ${notes})
+          (${fullName}, ${entityName}, ${email}, ${phone}, ${mailingAddress}, ${tier}, ${notes})
       `;
       persisted = true;
     } else {
@@ -104,7 +101,6 @@ export async function POST(req: NextRequest) {
           phone,
           mailingAddress,
           tier,
-          seedSparkName,
           notes,
         }),
       });

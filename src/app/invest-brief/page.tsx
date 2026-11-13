@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import VideoPlayer from "@/components/VideoPlayer";
-import { campaignUrl } from "@/lib/content";
 import { investBrief } from "@/lib/invest-brief-content";
 import { storyboards } from "@/lib/storyboards-content";
 
@@ -42,9 +41,7 @@ export const metadata: Metadata = {
 function CTAButton({ className = "" }: { className?: string }) {
   return (
     <a
-      href={campaignUrl}
-      target="_blank"
-      rel="noreferrer"
+      href="/invest-brief/ep-info"
       className={`inline-flex items-center justify-center rounded-full bg-rust-bright px-8 py-4 text-sm font-medium tracking-wide text-ink transition-transform hover:scale-[1.03] hover:bg-ember ${className}`}
     >
       {investBrief.closing.cta}
@@ -421,21 +418,6 @@ export default function InvestBriefPage() {
 
           <Reveal delay={0.4} className="mt-12 text-center">
             <CTAButton />
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ============ BEYOND SEED&SPARK ============ */}
-      <section className="bg-ink py-24 md:py-32">
-        <div className="mx-auto max-w-3xl px-6 text-center md:px-10">
-          <Reveal>
-            <p className="eyebrow text-ember">{investBrief.whyBeyond.eyebrow}</p>
-            <h2 className="font-display mt-3 text-4xl leading-[0.98] text-cream sm:text-5xl">
-              {investBrief.whyBeyond.heading}
-            </h2>
-            <p className="font-serif mx-auto mt-6 max-w-2xl text-lg italic leading-relaxed text-cream-dim">
-              {investBrief.whyBeyond.paragraph}
-            </p>
           </Reveal>
         </div>
       </section>

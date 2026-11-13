@@ -15,7 +15,6 @@ export default function EPIntakeForm({ successMessage }: { successMessage: strin
   const [phone, setPhone] = useState("");
   const [mailingAddress, setMailingAddress] = useState("");
   const [tier, setTier] = useState("");
-  const [seedSparkName, setSeedSparkName] = useState("");
   const [notes, setNotes] = useState("");
 
   const [status, setStatus] = useState<Status>("idle");
@@ -26,7 +25,7 @@ export default function EPIntakeForm({ successMessage }: { successMessage: strin
 
     if (!tier) {
       setStatus("error");
-      setMessage("Select the tier you pledged.");
+      setMessage("Select the tier you want.");
       return;
     }
 
@@ -44,7 +43,6 @@ export default function EPIntakeForm({ successMessage }: { successMessage: strin
           phone,
           mailingAddress,
           tier,
-          seedSparkName,
           notes,
         }),
       });
@@ -145,7 +143,7 @@ export default function EPIntakeForm({ successMessage }: { successMessage: strin
       </div>
 
       <fieldset>
-        <legend className={labelClass}>Which Tier Did You Pledge</legend>
+        <legend className={labelClass}>Which Tier Do You Want</legend>
         <div className="flex gap-3">
           {["$2,500+", "$5,000+"].map((amount) => (
             <label
@@ -169,20 +167,6 @@ export default function EPIntakeForm({ successMessage }: { successMessage: strin
           ))}
         </div>
       </fieldset>
-
-      <div>
-        <label htmlFor="seedSparkName" className={labelClass}>
-          Name Used On Your Seed&amp;Spark Pledge (optional)
-        </label>
-        <input
-          id="seedSparkName"
-          type="text"
-          value={seedSparkName}
-          onChange={(e) => setSeedSparkName(e.target.value)}
-          placeholder="Only if different from your full legal name above"
-          className={inputClass}
-        />
-      </div>
 
       <div>
         <label htmlFor="notes" className={labelClass}>
