@@ -1,5 +1,5 @@
 export const investBrief = {
-  deadline: "Funding closes November 14",
+  deadline: "Funding closes January 4",
   eyebrow: "By Invitation",
   headline: "This Is The Deal.",
   subhead:
@@ -178,7 +178,7 @@ export const investBrief = {
 
   closing: {
     heading: "The budget is set. The dates are locked. What's left is you.",
-    sub: "8 Executive Producer positions exist: 4 at $2,500 and 4 at $5,000. Funding needs to close by November 14.",
+    sub: "8 Executive Producer positions exist: 4 at $2,500 and 4 at $5,000. Funding needs to close by January 4.",
     cta: "Claim Your Executive Producer Credit",
   },
 };
