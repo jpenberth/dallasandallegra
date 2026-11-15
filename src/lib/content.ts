@@ -53,6 +53,16 @@ export const team: TeamMember[] = [
     links: [{ label: "catalystory.com", href: "https://catalystory.com/" }],
   },
   {
+    name: "Kerry Fleming",
+    role: "Producer",
+    bio: "Writer, producer, and director, and founder of RPD Entertainment. Co-writer of the thriller Rock Paper Scissors (with the late Victor Miller, creator of Friday the 13th), starring Michael Madsen and Tatum O'Neal, released by Lionsgate and Vertical Entertainment. Currently producing the sports drama The Last Mile and directing the true-crime short Not Guilty — Ep. 42, starring John Dugan (The Texas Chain Saw Massacre).",
+  },
+  {
+    name: "Eva Beadle",
+    role: "Executive Producer",
+    bio: "Founder and Senior Literary Manager of BSA Talent, representing writers, directors, and select acting talent across film and television. Credits include In the Mix starring Usher and the network comedy Method & Red, alongside collaborations with Academy Award winner Mel Gibson.",
+  },
+  {
     name: "Daniel J. Lennox",
     role: "Director of Photography",
     bio: "Writer/director whose debut feature Jackson's Run won Best Feature at the 2012 CMM Film Festival in New York, with nine additional nominations. Known for award-winning shorts built on emotional intensity.",

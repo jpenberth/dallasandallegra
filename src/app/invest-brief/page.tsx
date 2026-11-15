@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
+import Team from "@/components/Team";
 import VideoPlayer from "@/components/VideoPlayer";
 import { investBrief } from "@/lib/invest-brief-content";
 import { storyboards } from "@/lib/storyboards-content";
@@ -170,6 +171,8 @@ export default function InvestBriefPage() {
           </Reveal>
         </div>
       </section>
+
+      <Team />
 
       {/* ============ STORYBOARDS ============ */}
       <section className="bg-navy-deep py-24 md:py-32">

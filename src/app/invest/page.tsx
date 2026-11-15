@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
+import Team from "@/components/Team";
 import { invest } from "@/lib/invest-content";
 
 export const metadata: Metadata = {
@@ -155,6 +156,8 @@ export default function InvestPage() {
           </Reveal>
         </div>
       </section>
+
+      <Team />
 
       {/* ============ TIERS ============ */}
       <section className="bg-ink py-24 md:py-32">
