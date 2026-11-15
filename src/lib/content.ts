@@ -60,7 +60,7 @@ export const team: TeamMember[] = [
   {
     name: "Eva Beadle",
     role: "Executive Producer",
-    bio: "Founder and Senior Literary Manager of BSA Talent, representing writers, directors, and select acting talent across film and television. Credits include In the Mix starring Usher and the network comedy Method & Red, alongside collaborations with Academy Award winner Mel Gibson.",
+    bio: "Executive Producer and founder of BSA Talent, where she develops and packages elevated film and television projects for major studios, streamers, and independent financiers. Her credits include In the Mix starring Usher and the network comedy Method & Red, alongside collaborations with Academy Award winner Mel Gibson.",
   },
   {
     name: "Daniel J. Lennox",
@@ -72,6 +72,48 @@ export const team: TeamMember[] = [
     name: "Jacob Luttrell",
     role: "“Swyft” · Music Supervisor",
     bio: "Grammy-credited songwriter performing as JACOBISDEAD, with writing credits including Flo Rida's “Wild Ones” and Charlie Puth's “Marvin Gaye.” Plays Swyft and composes original music for the film.",
+    links: [{ label: "jacobisdead.com", href: "https://jacobisdead.com/" }],
+  },
+];
+
+// Investor-facing team bios for the hidden /invest and /invest-brief pages
+// only. Same people as `team` above, but written to foreground industry
+// credentials, box office scale, and commercial track record, for an
+// audience evaluating this as an investment rather than browsing a film
+// site. The main public site keeps the narrative bios in `team`.
+export const investorTeam: TeamMember[] = [
+  {
+    name: "J. Penberth Rabold",
+    role: "Writer & Director",
+    bio: "Fifteen years as a unit production manager and first assistant director, including stunt unit work on the blockbusters San Andreas and Furious 7, which together grossed nearly $2 billion worldwide. Dallas & Allegra is his debut as a writer-director, following the award-winning short Connected and the series Ghosts of War, a second-round Austin Film Festival selection.",
+    links: [{ label: "jpenberth.com", href: "https://jpenberth.com/" }],
+  },
+  {
+    name: "Shannon Geary",
+    role: "Producer",
+    bio: "21 years of hands-on production and set experience, as a music educator and theater director before moving into film. Producing Dallas & Allegra as the production's Pittsburgh-based lead.",
+    links: [{ label: "catalystory.com", href: "https://catalystory.com/" }],
+  },
+  {
+    name: "Kerry Fleming",
+    role: "Producer",
+    bio: "Producer and founder of RPD Entertainment. His thriller Rock Paper Scissors, starring Michael Madsen and Tatum O'Neal, was released theatrically by Lionsgate and Vertical Entertainment. Currently producing the sports drama The Last Mile and directing the true-crime short Not Guilty — Ep. 42, starring John Dugan (The Texas Chain Saw Massacre).",
+  },
+  {
+    name: "Eva Beadle",
+    role: "Executive Producer",
+    bio: "Executive Producer and founder of BSA Talent, developing and packaging elevated genre and prestige projects for major studios and streamers. Her slate includes In the Mix starring Usher and the network comedy Method & Red, alongside collaborations with Academy Award winner Mel Gibson — the same access and packaging she brings to Dallas & Allegra.",
+  },
+  {
+    name: "Daniel J. Lennox",
+    role: "Director of Photography",
+    bio: "Writer/director whose debut feature Jackson's Run won Best Feature at the 2012 CMM Film Festival in New York, with nine additional nominations. Brings that same award-winning eye to Dallas & Allegra as Director of Photography.",
+    links: [{ label: "sycamorefilms.com", href: "https://sycamorefilms.com/" }],
+  },
+  {
+    name: "Jacob Luttrell",
+    role: "“Swyft” · Music Supervisor",
+    bio: "Grammy-credited songwriter performing as JACOBISDEAD, with writing credits including Flo Rida's “Wild Ones” and Charlie Puth's “Marvin Gaye.” Plays Swyft and composes original music for Dallas & Allegra.",
     links: [{ label: "jacobisdead.com", href: "https://jacobisdead.com/" }],
   },
 ];

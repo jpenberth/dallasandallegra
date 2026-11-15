@@ -1,7 +1,7 @@
 import Reveal from "./Reveal";
-import { team } from "@/lib/content";
+import { team, type TeamMember } from "@/lib/content";
 
-export default function Team() {
+export default function Team({ members = team }: { members?: TeamMember[] }) {
   return (
     <section id="team" className="scroll-mt-20 bg-navy-deep py-28 md:py-36">
       <div className="mx-auto max-w-5xl px-6 md:px-10">
@@ -13,7 +13,7 @@ export default function Team() {
         </Reveal>
 
         <div className="mt-14 grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2">
-          {team.map((member, i) => (
+          {members.map((member, i) => (
             <Reveal key={member.name} delay={(i % 2) * 0.1}>
               <h3 className="font-display text-2xl tracking-wide text-cream">
                 {member.name}

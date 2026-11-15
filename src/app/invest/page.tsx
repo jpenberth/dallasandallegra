@@ -3,6 +3,7 @@ import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import Team from "@/components/Team";
 import { invest } from "@/lib/invest-content";
+import { investorTeam } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Executive Producer: Dallas & Allegra",
@@ -157,7 +158,7 @@ export default function InvestPage() {
         </div>
       </section>
 
-      <Team />
+      <Team members={investorTeam} />
 
       {/* ============ TIERS ============ */}
       <section className="bg-ink py-24 md:py-32">

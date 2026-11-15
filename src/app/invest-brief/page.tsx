@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal";
 import Team from "@/components/Team";
 import VideoPlayer from "@/components/VideoPlayer";
 import { investBrief } from "@/lib/invest-brief-content";
+import { investorTeam } from "@/lib/content";
 import { storyboards } from "@/lib/storyboards-content";
 
 export const metadata: Metadata = {
@@ -172,7 +173,7 @@ export default function InvestBriefPage() {
         </div>
       </section>
 
-      <Team />
+      <Team members={investorTeam} />
 
       {/* ============ STORYBOARDS ============ */}
       <section className="bg-navy-deep py-24 md:py-32">
