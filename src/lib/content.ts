@@ -43,7 +43,7 @@ export const team: TeamMember[] = [
   {
     name: "J. Penberth Rabold",
     role: "Writer & Director",
-    bio: "Award-winning screenwriter and director based between Pittsburgh and LA. Fifteen years as a unit production manager and first assistant director taught him what a story costs once it has to stand on a set, long before he had one worth telling himself. Dallas & Allegra is the first film he's making without a gatekeeper across the table, just the people who believe in it. His previous work includes the award-winning short Connected and the series Ghosts of War, a second-round Austin Film Festival selection.",
+    bio: "A writer and director drawn to character-driven stories about identity, love, and survival. He moved to Los Angeles in 2000 and spent fifteen years as a unit production manager and first assistant director on features, shorts, and music videos before moving into writing and directing in 2015. His work has earned 22 festival selections and awards, including two second-round selections at the Austin Film Festival, for Bathory and Ghosts of War, and screenplays and TV projects that have drawn interest from Netflix, Apple, Starz, and HBO. His short Connected was runner-up for the Jury Prize and Best Visuals at the 2019 Filmmakers Collaboration Challenge. Dallas & Allegra, a contemporary Rust Belt reimagining of Romeo and Juliet, is the first film he's directing without a gatekeeper across the table, just the people who believe in it.",
     links: [{ label: "jpenberth.com", href: "https://jpenberth.com/" }],
   },
   {
@@ -85,7 +85,7 @@ export const investorTeam: TeamMember[] = [
   {
     name: "J. Penberth Rabold",
     role: "Writer & Director",
-    bio: "Fifteen years as a unit production manager and first assistant director, including stunt unit work on the blockbusters San Andreas and Furious 7, which together grossed nearly $2 billion worldwide. Dallas & Allegra is his debut as a writer-director, following the award-winning short Connected and the series Ghosts of War, a second-round Austin Film Festival selection.",
+    bio: "Fifteen years as a unit production manager and first assistant director, including stunt unit work on the blockbusters San Andreas and Furious 7, which together grossed nearly $2 billion worldwide. Since moving into writing and directing in 2015, his work has earned 22 festival selections and awards, with screenplays and TV projects drawing interest from Netflix, Apple, Starz, and HBO. Dallas & Allegra, a contemporary Rust Belt reimagining of Romeo and Juliet, is his feature debut as writer-director.",
     links: [{ label: "jpenberth.com", href: "https://jpenberth.com/" }],
   },
   {
