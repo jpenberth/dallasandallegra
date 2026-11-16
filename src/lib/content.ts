@@ -32,10 +32,12 @@ export const story = {
   ],
 };
 
+export type BioSegment = string | { italic: string };
+
 export type TeamMember = {
   name: string;
   role: string;
-  bio: string;
+  bio: string | BioSegment[];
   links?: { label: string; href: string }[];
 };
 
@@ -43,7 +45,19 @@ export const team: TeamMember[] = [
   {
     name: "J. Penberth Rabold",
     role: "Writer & Director",
-    bio: "A writer and director drawn to character-driven stories about identity, love, and survival. He moved to Los Angeles in 2000 and spent fifteen years as a unit production manager and first assistant director on features, shorts, and music videos before moving into writing and directing in 2015. His work has earned 22 festival selections and awards, including two second-round selections at the Austin Film Festival, for Bathory and Ghosts of War, and screenplays and TV projects that have drawn interest from Netflix, Apple, Starz, and HBO. His short Connected was runner-up for the Jury Prize and Best Visuals at the 2019 Filmmakers Collaboration Challenge. Dallas & Allegra, a contemporary Rust Belt reimagining of Romeo and Juliet, is the first film he's directing without a gatekeeper across the table, just the people who believe in it.",
+    bio: [
+      "A writer and director drawn to character-driven stories about identity, love, and survival. He moved to Los Angeles in 2000 and spent fifteen years as a unit production manager and first assistant director on features, shorts, and music videos before moving into writing and directing in 2015. His work has earned 22 festival selections and awards, including two second-round selections at the Austin Film Festival, for ",
+      { italic: "Bathory" },
+      " and ",
+      { italic: "Ghosts of War" },
+      ", and screenplays and TV projects that have drawn interest from Netflix, Apple, Starz, and HBO. His short ",
+      { italic: "Connected" },
+      " was runner-up for the Jury Prize and Best Visuals at the 2019 Filmmakers Collaboration Challenge. ",
+      { italic: "Dallas & Allegra" },
+      ", a contemporary Rust Belt reimagining of ",
+      { italic: "Romeo and Juliet" },
+      ", is the first film he's directing without a gatekeeper across the table, just the people who believe in it.",
+    ],
     links: [{ label: "jpenberth.com", href: "https://jpenberth.com/" }],
   },
   {
@@ -55,17 +69,39 @@ export const team: TeamMember[] = [
   {
     name: "Kerry Fleming",
     role: "Producer",
-    bio: "Writer, producer, and director, and founder of RPD Entertainment. Co-writer of the thriller Rock Paper Scissors (with the late Victor Miller, creator of Friday the 13th), starring Michael Madsen and Tatum O'Neal, released by Lionsgate and Vertical Entertainment. Currently producing the sports drama The Last Mile and directing the true-crime short Not Guilty — Ep. 42, starring John Dugan (The Texas Chain Saw Massacre).",
+    bio: [
+      "Writer, producer, and director, and founder of RPD Entertainment. Co-writer of the thriller ",
+      { italic: "Rock Paper Scissors" },
+      " (with the late Victor Miller, creator of ",
+      { italic: "Friday the 13th" },
+      "), starring Michael Madsen and Tatum O'Neal, released by Lionsgate and Vertical Entertainment. Currently producing the sports drama ",
+      { italic: "The Last Mile" },
+      " and directing the true-crime short ",
+      { italic: "Not Guilty — Ep. 42" },
+      ", starring John Dugan (",
+      { italic: "The Texas Chain Saw Massacre" },
+      ").",
+    ],
   },
   {
     name: "Eva Beadle",
     role: "Executive Producer",
-    bio: "Executive Producer and founder of BSA Talent, where she develops and packages elevated film and television projects for major studios, streamers, and independent financiers. Her credits include In the Mix starring Usher and the network comedy Method & Red, alongside collaborations with Academy Award winner Mel Gibson.",
+    bio: [
+      "Executive Producer and founder of BSA Talent, where she develops and packages elevated film and television projects for major studios, streamers, and independent financiers. Her credits include ",
+      { italic: "In the Mix" },
+      " starring Usher and the network comedy ",
+      { italic: "Method & Red" },
+      ", alongside collaborations with Academy Award winner Mel Gibson.",
+    ],
   },
   {
     name: "Daniel J. Lennox",
     role: "Director of Photography",
-    bio: "Writer/director whose debut feature Jackson's Run won Best Feature at the 2012 CMM Film Festival in New York, with nine additional nominations. Known for award-winning shorts built on emotional intensity.",
+    bio: [
+      "Writer/director whose debut feature ",
+      { italic: "Jackson's Run" },
+      " won Best Feature at the 2012 CMM Film Festival in New York, with nine additional nominations. Known for award-winning shorts built on emotional intensity.",
+    ],
     links: [{ label: "sycamorefilms.com", href: "https://sycamorefilms.com/" }],
   },
   {
@@ -85,35 +121,77 @@ export const investorTeam: TeamMember[] = [
   {
     name: "J. Penberth Rabold",
     role: "Writer & Director",
-    bio: "Fifteen years as a unit production manager and first assistant director, including stunt unit work on the blockbusters San Andreas and Furious 7, which together grossed nearly $2 billion worldwide. Since moving into writing and directing in 2015, his work has earned 22 festival selections and awards, with screenplays and TV projects drawing interest from Netflix, Apple, Starz, and HBO. Dallas & Allegra, a contemporary Rust Belt reimagining of Romeo and Juliet, is his feature debut as writer-director.",
+    bio: [
+      "Fifteen years as a unit production manager and first assistant director, including stunt unit work on the blockbusters ",
+      { italic: "San Andreas" },
+      " and ",
+      { italic: "Furious 7" },
+      ", which together grossed nearly $2 billion worldwide. Since moving into writing and directing in 2015, his work has earned 22 festival selections and awards, with screenplays and TV projects drawing interest from Netflix, Apple, Starz, and HBO. ",
+      { italic: "Dallas & Allegra" },
+      ", a contemporary Rust Belt reimagining of ",
+      { italic: "Romeo and Juliet" },
+      ", is his feature debut as writer-director.",
+    ],
     links: [{ label: "jpenberth.com", href: "https://jpenberth.com/" }],
   },
   {
     name: "Shannon Geary",
     role: "Producer",
-    bio: "21 years of hands-on production and set experience, as a music educator and theater director before moving into film. Producing Dallas & Allegra as the production's Pittsburgh-based lead.",
+    bio: [
+      "21 years of hands-on production and set experience, as a music educator and theater director before moving into film. Producing ",
+      { italic: "Dallas & Allegra" },
+      " as the production's Pittsburgh-based lead.",
+    ],
     links: [{ label: "catalystory.com", href: "https://catalystory.com/" }],
   },
   {
     name: "Kerry Fleming",
     role: "Producer",
-    bio: "Producer and founder of RPD Entertainment. His thriller Rock Paper Scissors, starring Michael Madsen and Tatum O'Neal, was released theatrically by Lionsgate and Vertical Entertainment. Currently producing the sports drama The Last Mile and directing the true-crime short Not Guilty — Ep. 42, starring John Dugan (The Texas Chain Saw Massacre).",
+    bio: [
+      "Producer and founder of RPD Entertainment. His thriller ",
+      { italic: "Rock Paper Scissors" },
+      ", starring Michael Madsen and Tatum O'Neal, was released theatrically by Lionsgate and Vertical Entertainment. Currently producing the sports drama ",
+      { italic: "The Last Mile" },
+      " and directing the true-crime short ",
+      { italic: "Not Guilty — Ep. 42" },
+      ", starring John Dugan (",
+      { italic: "The Texas Chain Saw Massacre" },
+      ").",
+    ],
   },
   {
     name: "Eva Beadle",
     role: "Executive Producer",
-    bio: "Executive Producer and founder of BSA Talent, developing and packaging elevated genre and prestige projects for major studios and streamers. Her slate includes In the Mix starring Usher and the network comedy Method & Red, alongside collaborations with Academy Award winner Mel Gibson — the same access and packaging she brings to Dallas & Allegra.",
+    bio: [
+      "Executive Producer and founder of BSA Talent, developing and packaging elevated genre and prestige projects for major studios and streamers. Her slate includes ",
+      { italic: "In the Mix" },
+      " starring Usher and the network comedy ",
+      { italic: "Method & Red" },
+      ", alongside collaborations with Academy Award winner Mel Gibson. She brings that same access and packaging to ",
+      { italic: "Dallas & Allegra" },
+      ".",
+    ],
   },
   {
     name: "Daniel J. Lennox",
     role: "Director of Photography",
-    bio: "Writer/director whose debut feature Jackson's Run won Best Feature at the 2012 CMM Film Festival in New York, with nine additional nominations. Brings that same award-winning eye to Dallas & Allegra as Director of Photography.",
+    bio: [
+      "Writer/director whose debut feature ",
+      { italic: "Jackson's Run" },
+      " won Best Feature at the 2012 CMM Film Festival in New York, with nine additional nominations. Brings that same award-winning eye to ",
+      { italic: "Dallas & Allegra" },
+      " as Director of Photography.",
+    ],
     links: [{ label: "sycamorefilms.com", href: "https://sycamorefilms.com/" }],
   },
   {
     name: "Jacob Luttrell",
     role: "“Swyft” · Music Supervisor",
-    bio: "Grammy-credited songwriter performing as JACOBISDEAD, with writing credits including Flo Rida's “Wild Ones” and Charlie Puth's “Marvin Gaye.” Plays Swyft and composes original music for Dallas & Allegra.",
+    bio: [
+      "Grammy-credited songwriter performing as JACOBISDEAD, with writing credits including Flo Rida's “Wild Ones” and Charlie Puth's “Marvin Gaye.” Plays Swyft and composes original music for ",
+      { italic: "Dallas & Allegra" },
+      ".",
+    ],
     links: [{ label: "jacobisdead.com", href: "https://jacobisdead.com/" }],
   },
 ];

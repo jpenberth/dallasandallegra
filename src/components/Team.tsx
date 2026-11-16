@@ -20,7 +20,17 @@ export default function Team({ members = team }: { members?: TeamMember[] }) {
               </h3>
               <p className="eyebrow mt-1 text-rust-bright">{member.role}</p>
               <p className="mt-3 text-sm leading-relaxed text-cream-dim">
-                {member.bio}
+                {typeof member.bio === "string"
+                  ? member.bio
+                  : member.bio.map((part, j) =>
+                      typeof part === "string" ? (
+                        <span key={j}>{part}</span>
+                      ) : (
+                        <em key={j} className="font-serif italic">
+                          {part.italic}
+                        </em>
+                      )
+                    )}
               </p>
               {member.links && (
                 <div className="mt-3 flex flex-wrap gap-4">
